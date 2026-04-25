@@ -1,12 +1,12 @@
 # NHReal‑Time A&E Wait‑Time Streaming Platform
 A streaming data engineering project using Terraform, Docker, PySpark, Azure Event Hubs, Prometheus, and Grafana.
 
-📌 Overview
+## Overview
 This project simulates real‑time A&E (Accident & Emergency) patient arrivals and wait‑time events, streams them into Azure Event Hubs, processes them using PySpark Structured Streaming, and visualises both operational and pipeline‑health metrics using Prometheus and Grafana.
 
 It demonstrates a production‑grade streaming architecture with infrastructure‑as‑code, containerised compute, cloud messaging, real‑time analytics, and full observability.
 
-🎯 Key Features
+## Key Features
 Synthetic A&E patient event generator (Dockerised Python)
 
 Real‑time ingestion into Azure Event Hubs
@@ -25,7 +25,8 @@ A&E operational metrics
 
 Spark pipeline health
 
-🧱 Architecture
+## Architecture
+
 Code
 ┌──────────────────────┐
 │  Event Generator      │
@@ -71,7 +72,8 @@ json
   "patient_id": "P12345",
   "seen_by_doctor_time": "2026-04-25T05:52:00Z"
 }
-🔥 Streaming Transformations
+
+## Streaming Transformations
 The PySpark job computes:
 
 Operational Metrics
@@ -92,7 +94,7 @@ Queue length prediction
 
 SLA breach alerts
 
-📊 Dashboards
+## Dashboards
 A. A&E Operational Dashboard
 Live average wait time
 
@@ -115,7 +117,7 @@ Executor CPU/memory
 
 Failed batches
 
-🧩 Repository Structure
+## Repository Structure
 Code
 ae-waittime-streaming/
   terraform/
